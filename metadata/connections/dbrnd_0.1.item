@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_fKSkoHmLEeieKsC676t5_g" name="dbrnd" id="_SgbhIHmLEeieKsC676t5_g" label="dbrnd" dataPackage="_fLISIHmLEeieKsC676t5_g" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/dbrnd" dbVersionString="PRIOR_TO_V9" Port="5432" Username="dbrnd" Password="4ybfRrmcLE0=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="dbrnd" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_fKUZ0HmLEeieKsC676t5_g" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_fKgAAHmLEeieKsC676t5_g" tag="package filter" value=""/>
+    <taggedValue xmi:id="_fKq_IHmLEeieKsC676t5_g" tag="Status" value=""/>
+    <taggedValue xmi:id="_fKq_IXmLEeieKsC676t5_g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_fKq_InmLEeieKsC676t5_g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_fKq_I3mLEeieKsC676t5_g" tag="Description" value=""/>
+    <taggedValue xmi:id="_fKq_JHmLEeieKsC676t5_g" tag="Author" value=""/>
+    <taggedValue xmi:id="_fKq_JXmLEeieKsC676t5_g" tag="otherParameter"/>
+    <taggedValue xmi:id="_fKupgHmLEeieKsC676t5_g" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_fKupgXmLEeieKsC676t5_g" tag="DB ProductVersion" value="9.5.13"/>
+    <taggedValue xmi:id="_fKupgnmLEeieKsC676t5_g" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <queries xmi:id="_46YzsHmNEeiKdL3VbfZOnw">
+      <query xmi:id="_46YzsnmNEeiKdL3VbfZOnw" id="_46YzsXmNEeiKdL3VbfZOnw" comment="na" label="selectquery" value="select &quot;cities&quot;.&quot;name&quot;,&quot;cities&quot;.&quot;sr_no&quot; &#xA;from &quot;cities&quot;"/>
+    </queries>
+    <parameters xmi:id="_fKUZ0XmLEeieKsC676t5_g" key="CONN_PARA_KEY_USERNAME" value="dbrnd"/>
+    <parameters xmi:id="_VjRxoHmMEeieKsC676t5_g" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_fLISIHmLEeieKsC676t5_g" name="dbrnd" dataManager="_fKSkoHmLEeieKsC676t5_g">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_fLI5M3mLEeieKsC676t5_g" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_9H8EIHmLEeieKsC676t5_g" name="cities" id="_9H7dEHmLEeieKsC676t5_g" label="cities" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_9H8EIXmLEeieKsC676t5_g" name="name" label="name" length="80" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_9H8EInmLEeieKsC676t5_g" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9H8EI3mLEeieKsC676t5_g" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9H8EJHmLEeieKsC676t5_g" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_9H8EJXmLEeieKsC676t5_g" name="sr_no" label="sr_no" length="20" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_9H8EJnmLEeieKsC676t5_g" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_9H8EJ3mLEeieKsC676t5_g" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_9H8EKHmLEeieKsC676t5_g" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WtfiAHmMEeieKsC676t5_g" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WtfiAXmMEeieKsC676t5_g" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WtfiAnmMEeieKsC676t5_g" name="pg_toast_temp_1"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
